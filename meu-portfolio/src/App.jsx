@@ -1,7 +1,11 @@
 import fotoPerfil from "/assets/imagem/barbara.jpeg";
 import fotoSobre from "/assets/imagem/barbara2.jpeg";
+import quizPrint from "/assets/imagem/quiz-print.png";
 
 function App() {
+  const whatsappLink =
+    "https://wa.me/5535998231715?text=Olá%20Bárbara,%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento%20de%20serviço%20freelancer.";
+
   return (
     <>
       <header>
@@ -103,6 +107,17 @@ function App() {
                     </em>
                   </p>
                 </div>
+
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="freelancer-cta"
+                >
+                  💼 Ofereço serviços freelancer para criação de sites pessoais e
+                  para demais demandas. Clique aqui para solicitar um orçamento
+                  pelo WhatsApp.
+                </a>
               </div>
             </div>
           </div>
@@ -155,7 +170,7 @@ function App() {
               <div
                 className="img-port"
                 style={{
-                  backgroundImage: "url('/assets/imagem/quiz-print.png')",
+                  backgroundImage: `url(${quizPrint})`,
                 }}
               >
                 <div className="overlay">
@@ -205,6 +220,21 @@ function App() {
               </div>
             </div>
 
+            <div className="flex-contato">
+              <div className="contato-box">
+                <i className="fa-brands fa-whatsapp"></i>
+                <p>
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    WhatsApp para orçamento freelancer
+                  </a>
+                </p>
+              </div>
+            </div>
+
             <div className="social-contato">
               <a
                 className="social-btn"
@@ -234,6 +264,16 @@ function App() {
                 aria-label="Instagram"
               >
                 <i className="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                className="social-btn"
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+              >
+                <i className="fa-brands fa-whatsapp"></i>
               </a>
             </div>
           </div>

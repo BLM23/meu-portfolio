@@ -194,6 +194,27 @@ nav.menu a:hover {
   font-style: italic;
 }
 
+.freelancer-cta {
+  display: block;
+  margin-top: 25px;
+  background: rgba(50, 255, 14, 0.08);
+  border: 1px solid var(--verde-neon);
+  color: var(--verde-neon);
+  padding: 16px 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: var(--transicao);
+}
+
+.freelancer-cta:hover {
+  background: var(--verde-neon);
+  color: #000;
+  box-shadow: 0 0 20px rgba(50, 255, 14, 0.25);
+  transform: translateY(-3px);
+}
+
 /* =========================================
    SEÇÃO HABILIDADES
    ========================================= */
@@ -388,7 +409,7 @@ nav.menu a:hover {
 .flex-contato {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contato-box {
@@ -416,6 +437,7 @@ nav.menu a:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .social-contato .social-btn {
@@ -517,5 +539,10 @@ nav.menu a:hover {
 
   .contato-box p a {
     font-size: 16px;
+  }
+
+  .freelancer-cta {
+    font-size: 14px;
+    padding: 14px 16px;
   }
 }
