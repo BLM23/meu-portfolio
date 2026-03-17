@@ -45,7 +45,10 @@ function App() {
               </div>
 
               <div className="imagem">
-                <img src="/assets/imagem/barbara.jpeg" alt="Foto de perfil" />
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/imagem/barbara.jpeg`}
+                  alt="Foto de perfil"
+                />
               </div>
             </div>
           </div>
@@ -56,7 +59,7 @@ function App() {
             <div className="sobre-flex">
               <div className="sobre-img">
                 <img
-                  src="/assets/imagem/barbara2.jpeg"
+                  src={`${import.meta.env.BASE_URL}assets/imagem/barbara2.jpeg`}
                   alt="Foto de Bárbara Lima Marques"
                 />
               </div>
@@ -163,7 +166,6 @@ function App() {
             </h2>
 
             <div className="flex-projetos">
-
               <div
                 className="img-port"
                 style={{
@@ -197,7 +199,6 @@ function App() {
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
