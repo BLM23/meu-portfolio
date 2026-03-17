@@ -1,4 +1,6 @@
-{/* Início do componente App */}
+import fotoPerfil from "/assets/imagem/barbara.jpeg";
+import fotoSobre from "/assets/imagem/barbara2.jpeg";
+
 function App() {
   return (
     <>
@@ -43,7 +45,7 @@ function App() {
               </div>
 
               <div className="imagem">
-                <img src="/assets/imagem/barbara.jpeg" alt="Foto de perfil" />
+                <img src={fotoPerfil} alt="Foto de perfil" />
               </div>
             </div>
           </div>
@@ -54,7 +56,7 @@ function App() {
             <div className="sobre-flex">
               <div className="sobre-img">
                 <img
-                  src="/assets/imagem/barbara2.jpeg"
+                  src={fotoSobre}
                   alt="Foto de Bárbara Lima Marques"
                 />
               </div>
@@ -246,4 +248,3 @@ function App() {
 }
 
 export default App;
-{/* Fim do componente App */}
