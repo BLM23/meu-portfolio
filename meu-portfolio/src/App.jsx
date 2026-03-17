@@ -1,7 +1,3 @@
-import fotoPerfil from "/assets/imagem/barbara.jpeg";
-import fotoSobre from "/assets/imagem/barbara2.jpeg";
-import quizPrint from "/assets/imagem/quiz-print.png";
-
 function App() {
   const whatsappLink =
     "https://wa.me/5535998231715?text=Olá%20Bárbara,%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento%20de%20serviço%20freelancer.";
@@ -49,7 +45,7 @@ function App() {
               </div>
 
               <div className="imagem">
-                <img src={fotoPerfil} alt="Foto de perfil" />
+                <img src="/assets/imagem/barbara.jpeg" alt="Foto de perfil" />
               </div>
             </div>
           </div>
@@ -60,7 +56,7 @@ function App() {
             <div className="sobre-flex">
               <div className="sobre-img">
                 <img
-                  src={fotoSobre}
+                  src="/assets/imagem/barbara2.jpeg"
                   alt="Foto de Bárbara Lima Marques"
                 />
               </div>
@@ -167,10 +163,12 @@ function App() {
             </h2>
 
             <div className="flex-projetos">
+
               <div
                 className="img-port"
                 style={{
-                  backgroundImage: `url(${quizPrint})`,
+                  backgroundColor: "#111",
+                  border: "1px dashed #333",
                 }}
               >
                 <div className="overlay">
@@ -199,6 +197,7 @@ function App() {
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -224,11 +223,7 @@ function App() {
               <div className="contato-box">
                 <i className="fa-brands fa-whatsapp"></i>
                 <p>
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href={whatsappLink} target="_blank" rel="noreferrer">
                     WhatsApp para orçamento freelancer
                   </a>
                 </p>
@@ -236,43 +231,19 @@ function App() {
             </div>
 
             <div className="social-contato">
-              <a
-                className="social-btn"
-                href="https://github.com/blm23"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-              >
+              <a className="social-btn" href="https://github.com/blm23" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-github"></i>
               </a>
 
-              <a
-                className="social-btn"
-                href="https://www.linkedin.com/in/bárbara-marques-5a61aa258/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
+              <a className="social-btn" href="https://www.linkedin.com/in/bárbara-marques-5a61aa258/" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-linkedin-in"></i>
               </a>
 
-              <a
-                className="social-btn"
-                href="https://www.instagram.com/barbaramarques0623?igsh=MWxtenQzMzJmNnFzdA=="
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-              >
+              <a className="social-btn" href="https://www.instagram.com/barbaramarques0623" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-instagram"></i>
               </a>
 
-              <a
-                className="social-btn"
-                href={whatsappLink}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="WhatsApp"
-              >
+              <a className="social-btn" href={whatsappLink} target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
             </div>
