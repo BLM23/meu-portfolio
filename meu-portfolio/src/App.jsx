@@ -1,6 +1,6 @@
 function App() {
   const whatsappLink =
-    "https://wa.me/5535998231715?text=Olá%20Bárbara,%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento%20de%20serviço%20freelancer.";
+      "https://wa.me/5535998231715?text=Olá%20Bárbara,%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20projeto%20de%20desenvolvimento%20Front-end.";
 
   return (
     <>
